@@ -1,4 +1,4 @@
-Module.register("yijv", {
+Module.register("MMM-yijv", {
 
     // Module config defaults.
     defaults: {
