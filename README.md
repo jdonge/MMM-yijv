@@ -1,4 +1,4 @@
-# yijv
+# MMM-yijv
 > [MagicMirror](https://github.com/MichMich/MagicMirror) moudle substitute compliments, only supports Chinese.
 
 > 魔镜模块，取代`'compliments'`，利用[一句](http://yijuzhan.com/) 随机产生一句古诗词。
@@ -8,7 +8,7 @@
 
 ```shell
 cd modules
-git clone https://github.com/jdonge/yijv
+git clone https://github.com/jdonge/MMM-yijv
 ```
 
 ## Using the module
@@ -17,7 +17,7 @@ git clone https://github.com/jdonge/yijv
 var config = {
     modules: [
         {
-            module: "yijv",
+            module: "MMM-yijv",
             position: "lower_third",
             config: {
             }
@@ -67,7 +67,7 @@ var config = {
 var config = {
     modules: [
         {
-            module: "yijv",
+            module: "MMM-yijv",
             position: "lower_third",
             config: {
                 updateInterval: 60000,
