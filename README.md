@@ -1,6 +1,7 @@
 # yijv
-> [MagicMirror](https://github.com/MichMich/MagicMirror) moudle substitute compliments, only supports language.
-魔镜模块，取代`'compliments'`，利用[一句](http://yijuzhan.com/) 随机产生一句古诗词。
+> [MagicMirror](https://github.com/MichMich/MagicMirror) moudle substitute compliments, only supports Chinese.
+
+> 魔镜模块，取代`'compliments'`，利用[一句](http://yijuzhan.com/) 随机产生一句古诗词。
 
 ## Installation
 运行以下命令。
@@ -44,12 +45,8 @@ var config = {
 			<td>动画速度，毫秒。</td>
 		</tr>
 		<tr>
-			<td><code>url</code></td>
-			<td>古诗词来源网址，没事别改。</td>
-		</tr>
-		<tr>
 			<td><code>authorAlign</code></td>
-			<td>作者对齐方式<ul>
+			<td>作者来源对齐方式<ul>
                 <li><code>'align-right'</code> 右对齐。</li>
                 <li><code>'align-left'</code> 左对齐。</li>
                 <li>空着就居中。</li></ul></td>
@@ -60,7 +57,7 @@ var config = {
         </tr>
         <tr>
         			<td><code>maxQuantity</code></td>
-        			<td>最大缓存数量。</td>
+        			<td>最大缓存数量。Int</td>
         </tr>
 	</tbody>
 </table>
@@ -74,7 +71,15 @@ var config = {
             position: "lower_third",
             config: {
                 updateInterval: 60000,
-                authorAlign: ""
+		fadeSpeed: 4000,
+                authorAlign: "",
+		words: [{
+            		content: "不要怂，一起上！",
+            		source: "和平精英"
+        		},{
+			content: "世界那么大，你想去看看。事情那么多，你咋不干？",
+            		source: "陈一发儿"}],
+        	maxQuantity: 10
             }
         }
     ]
