@@ -59,6 +59,10 @@ var config = {
         			<td><code>maxQuantity</code></td>
         			<td>最大缓存数量。Int</td>
         </tr>
+        <tr>
+        			<td><code>lineBreak</code></td>
+        			<td>遇到 <code>'，。？！'</code> 换行，'true' or 'false'</td>
+        </tr>
 	</tbody>
 </table>
 
@@ -79,7 +83,8 @@ var config = {
         		},{
 			content: "世界那么大，你想去看看。事情那么多，你咋不干？",
             		source: "陈一发儿"}],
-        	maxQuantity: 10
+        	maxQuantity: 10,
+            lineBreak: true
             }
         }
     ]
